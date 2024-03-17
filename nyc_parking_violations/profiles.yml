@@ -1,0 +1,13 @@
+nyc_parking_violations:
+  outputs:
+    dev:
+      type: duckdb
+      path: 'C:/mu-work/year3_2/Data_Engeneer/week5/dbt-workspace/data-engineering-with-data-build-tool-dbt-4458303/data/nyc_parking_violations.db'
+
+    prod:
+      type: duckdb
+      # note that path is slightly different as GitHub actions
+      # start in the root directory and not in the
+      # nyc_parking_violations directory
+      path: 'C:/mu-work/year3_2/Data_Engeneer/week5/dbt-workspace/data-engineering-with-data-build-tool-dbt-4458303/data/prod_nyc_parking_violations.db' 
+  target: dev
